@@ -1,5 +1,6 @@
 # Football Manager
 Football manager is the computer science final project for Semester 2
+Project on [GitHub](https://github.com/archetype2142/football_manager)
 ## Installation
 
 Football manager requires GNU plot to render graphs along with boost library for some of it's optional features 
@@ -19,7 +20,7 @@ $ sudo make
 #### - Running the program
 There are 5 main files included with the program that can be run from a terminal window with the following command
 
-`filename should be replaced by actual name of the file to be run.`
+`file_name should be replaced by actual name of the file to be run.`
 ```sh
 $ sudo ./file_name
 ```
