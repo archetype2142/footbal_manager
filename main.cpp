@@ -1,4 +1,5 @@
-/* Requires GNU plot to render graphs, use
+/* ==========FOOTBALL_NO_GRAPH===========
+Requires GNU plot to render graphs, use
 main4.cpp(or "football_no_graph") and check
 results produced in "data.dat" file. This 
 main file shows use of FanClubs and all it's 

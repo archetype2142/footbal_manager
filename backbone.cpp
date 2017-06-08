@@ -9,7 +9,7 @@ Fans::Fans(string name, int age, char sex) {
 	this -> sex = sex;
 }
 
-//acessor functions 
+//accessor functions 
 int Fans::clubProvider() { return club; }
 char Fans::whatSex() { return sex; }
 int Fans::whatAge() { return age; }

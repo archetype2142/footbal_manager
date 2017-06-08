@@ -1,8 +1,8 @@
 
-footballmaker: main.o backbone.o structure.o graph.o interactive.o
-	g++ -o football_graph main.o backbone.o structure.o graph.o interactive.o
-	g++ -o football_no_graph main4.cpp backbone.o structure.o graph.o interactive.o
-	g++ -o football_man_pla_rel main2.cpp backbone.o structure.o graph.o interactive.o
-	g++ -o interactive_graph main3.cpp backbone.o structure.o graph.o interactive.o
-	g++ -o interactive_no_graph main5.cpp backbone.o structure.o graph.o interactive.o
-	rm structure.o backbone.o main.o graph.o interactive.o
+footballmaker: main.cpp backbone.cpp structure.cpp graph.cpp interactive.cpp
+	g++ -std=gnu++11 -o football_graph main.cpp backbone.cpp structure.cpp graph.cpp interactive.cpp
+	g++ -std=gnu++11 -o football_no_graph main4.cpp backbone.cpp structure.cpp graph.cpp interactive.cpp
+	g++ -std=gnu++11 -o football_man_pla_rel main2.cpp backbone.cpp structure.cpp graph.cpp interactive.cpp
+	g++ -std=gnu++11 -o interactive_graph main3.cpp backbone.cpp structure.cpp graph.cpp interactive.cpp
+	g++ -std=gnu++11 -o interactive_no_graph main5.cpp backbone.cpp structure.cpp graph.cpp interactive.cpp
+	g++ -std=gnu++11 -o exceptions exceptions.cpp structure.cpp backbone.cpp

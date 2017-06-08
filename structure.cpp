@@ -10,6 +10,21 @@ std::vector<Players> players;
 std::list<ManagingDirectors> directors;
 std::vector<Fans> fans;
 
+void contains_non_alpha(string name) {
+	if(!regex_match (name, std::regex("^[A-Za-z]+$"))) 
+		throw std::invalid_argument{"Name can only contain letters"};
+} 
+
+void m_or_f(char x) {
+	if(!(x == 'm' || x == 'f' || x == 'M' || x == 'F')) 
+		throw std::invalid_argument{"sex must only be m/M or f/F"};
+}
+
+void age_test(int age) {
+	if(age > 100) 
+		throw std::out_of_range{"Age must be less than 100"};
+}
+
 //Fan Club member functions 
 FanClubs::FanClubs(string name, int id) {
 	clubName = name;
@@ -26,6 +41,12 @@ void FanClubs::showFans() {
 
 //parameterized 
 void FanClubs::addFans(string name, int age, char sex) {
+	//exceptions_begin
+	contains_non_alpha(name);
+	m_or_f(sex);
+	age_test(age);
+	//exceptions_end
+
 	Fans fan(name, age, sex);
 	fan.club = clubId;
 	fans.push_back(fan);
@@ -75,6 +96,13 @@ void SoccerTeams::showManagers() {
 }
 
 void SoccerTeams::addPlayer(std::string name, int age, char sex, int id) {
+	//exceptions_begin
+	contains_non_alpha(name);
+	m_or_f(sex);
+	age_test(age);
+	//exceptions_end
+
+	contains_non_alpha(name);
 	Players playernew(name, age, sex, id);
 	playernew.team = teamId;
 	players.push_back(playernew);
@@ -152,6 +180,12 @@ int SoccerTeams::findManager(int id) {
 
 //overloaded add mgr function with args 
 	void SoccerTeams::addManager(string name, int age, char sex, int id) {
+		//exceptions_begin
+		contains_non_alpha(name);
+		m_or_f(sex);
+		age_test(age);
+		//exceptions_end
+		
 		ManagingDirectors mandir(name, age, sex, id);
 		mandir.team = teamId;
 		directors.push_front(mandir);

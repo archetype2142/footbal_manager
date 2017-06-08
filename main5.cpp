@@ -1,4 +1,5 @@
-/* This main file shows all fanclubs
+/*======INTERACTIVE_NO_GRAPH======
+This main file shows all fanclubs
 and teams classes functions with 
 interactive menus, GNU plot is not 
 required, graph data would be present

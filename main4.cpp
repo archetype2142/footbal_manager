@@ -1,3 +1,5 @@
+
+//==========FOOTBALL_GRAPH===========
 #include <iostream>
 #include "structure.h"
 #include "backbone.h"
@@ -16,6 +18,7 @@ int main(int argc, char const *argv[]) {
 	clubA.addFans("Max", 35, 'm');
 	clubA.addFans("Abdu", 11, 'f');
 	clubA.addFans("Master", 11, 'f');
+	clubA.addFans("lol", 32, 'm');
 
 	FanClubs clubB("Second Club", 51);
 	clubB.addFans("Rocky", 22, 'f');

@@ -3,6 +3,7 @@
 #pragma once
 #include <string>
 #include <vector>
+#include <regex>
 #include <list> 
 
 using namespace std;

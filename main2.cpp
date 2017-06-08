@@ -1,4 +1,5 @@
-/* This file shows how managers and players 
+/* ==========Football_man_pla_rel===========
+This file shows how managers and players 
 work together in a team, it also uses fileIO
 to export all details of the teams in files
 mentioned in line 60, 61 and 62 respectively*/
@@ -21,9 +22,9 @@ int main(int argc, char const *argv[]) {
 	
 	/*Assign a manager to a team with arguments
 	name, age, sex and ID repsectively*/
-	teamA.addManager("Mr. Balkans", 52, 'm', 65);
-	teamA.addManager("James Bond", 22, 'm', 66);
-	teamB.addManager("VGA Cable", 43, 'f', 62);
+	teamA.addManager("MrBalkans", 52, 'm', 65);
+	teamA.addManager("JamesBond", 22, 'm', 66);
+	teamB.addManager("VGACable", 43, 'f', 62);
 	teamC.addManager("Pencil", 14, 'm', 45);
 
 	teamA.showManagers();
@@ -33,7 +34,7 @@ int main(int argc, char const *argv[]) {
 	/*Add a player to a team with arguments
 	name, age, sex and ID respectively */
 	teamA.addPlayer("Rahul", 21, 'm', 81);
-	teamA.addPlayer("Pinky", 46, 'f', 82);
+	teamA.addPlayer("Pinky", 26, 'f', 82);
 	teamA.addPlayer("Venkat", 12, 'm', 83);
 	teamA.addPlayer("Lindsay", 64, 'f', 84);
 	teamA.addPlayer("Frank", 23, 'm', 85);
